@@ -1,3 +1,9 @@
 .losing-bottas {
   max-width: 75%;
 }
+
+@media (max-width: 768px) {
+  .losing-bottas {
+    max-width: 100%;
+  }
+}

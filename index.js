@@ -19,7 +19,7 @@ const App = () => {
         setLatestRaceResults(response.data.MRData.RaceTable.Races[0]);
 
         if (response.data.MRData.RaceTable.Races[0].Results[0].Driver.code === 'BOT') {
-          setHadPorridge(false);
+          setHadPorridge(true);
         }
       })
       .catch((error) => {

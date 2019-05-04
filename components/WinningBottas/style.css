@@ -1,3 +1,9 @@
 .winning-bottas {
   max-width: 75%;
 }
+
+@media (max-width: 768px) {
+  .winning-bottas {
+    max-width: 100%;
+  }
+}
