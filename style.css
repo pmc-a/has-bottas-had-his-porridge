@@ -3,6 +3,13 @@ body {
   vertical-align: center;
 }
 
-h1, p {
+h1, h3, p {
   font-family: Lato;
+}
+
+#main-container {
+  padding: 10%;
+  width: 80%;
+  height: 100%;
+  background-color: lightblue;
 }
