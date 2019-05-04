@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { render } from 'react-dom';
-const axios = require('axios');
+import axios from 'axios';
 
+import Bottas from './components/Bottas';
 import './style.css';
 
 const fetchResults = () => axios.get('https://ergast.com/api/f1/current/last/results.json');
@@ -23,8 +24,12 @@ const App = () => {
 
   return (
     <div>
-      <h1>Has Valterri Bottas had his porridge?</h1>
-      <p>{hadPorridge === true ? 'Yes': 'No'}</p>
+      <h1>Has Valtteri Bottas had his porridge?</h1>
+      {
+        hadPorridge === null ?
+        <Bottas /> :
+        <p>{hadPorridge === true ? 'Yes': 'No'}</p>
+      }
     </div>
   );
 };
